@@ -10,7 +10,6 @@
 		<ToolCommandName>dotnet-customtemplates</ToolCommandName>
 		<Authors>Thiago Chagas</Authors>
 		<Company>Chagas</Company>
-		<PackageTags>API;OpenAPI;Swagger;ApiVersioning</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>
 			Tool for generating .NET custom projects
@@ -24,6 +23,10 @@
 	<ItemGroup>
 		<PackageReference Include="ConsoleTools" Version="1.1.1" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="docs\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>

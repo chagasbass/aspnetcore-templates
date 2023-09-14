@@ -1,11 +1,15 @@
-﻿var logger = new LoggerConfiguration()
+﻿using DustInTheWind.ConsoleTools;
+
+var logger = new LoggerConfiguration()
     .WriteTo.Console(theme: AnsiConsoleTheme.Literate)
     .CreateLogger();
 
 Console.WriteLine();
+
 var template = MenuTemplates.Execute();
 
 Console.WriteLine();
+
 string? projectName = null;
 do
 {
@@ -13,7 +17,7 @@ do
     {
         var oldForegroundColor = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Inform a valid project name!");
+        CustomConsole.WriteLineError("Inform a valid project name!");
         Console.ForegroundColor = oldForegroundColor;
         Console.WriteLine();
     }
@@ -25,12 +29,14 @@ do
 try
 {
     Console.WriteLine();
-    logger.Information("Starting the project generation...");
+    CustomConsole.WriteLineWarning("Starting the project generation...");
+
     await ProjectGenerator.GenerateProject(projectName, template, logger);
-    logger.Information($"Project * {projectName} * with template * {template} * generated successfully!");
+
+    CustomConsole.WriteLineSuccess("Project * {projectName} * with template * {template} * generated successfully!");
 }
 catch (Exception ex)
 {
-    logger.Error(ex, "Error generating project");
+    CustomConsole.WriteLineError("Error generating project");
     return;
 }

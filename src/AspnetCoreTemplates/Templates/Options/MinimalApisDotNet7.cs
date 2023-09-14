@@ -4,7 +4,7 @@ public class MinimalApisDotNet7 : TemplateDefinition
 {
     public MinimalApisDotNet7()
     {
-        BaseUrl = "https://raw.githubusercontent.com/chagasbass/DotNetApiVersioningTemplates/main/templates/1.00.00/dotnet7/minimal/Chagas";
+        BaseUrl = "https://raw.githubusercontent.com/chagasbass/aspnetcore-templates/main/templates/1.00.00/dotnet7/minimal/Chagas";
 
         #region API
         Files.Add("Chagas.csproj");
