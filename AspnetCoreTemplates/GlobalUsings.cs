@@ -1,0 +1,10 @@
+﻿global using AspnetCoreTemplates.Templates;
+global using AspnetCoreTemplates.Templates.Base;
+global using AspnetCoreTemplates.Templates.Menu;
+global using AspnetCoreTemplates.Templates.Options;
+global using DustInTheWind.ConsoleTools.Controls.Menus;
+global using Serilog;
+global using Serilog.Core;
+global using Serilog.Sinks.SystemConsole.Themes;
+global using System.Text;
+global using System.Text.RegularExpressions;
