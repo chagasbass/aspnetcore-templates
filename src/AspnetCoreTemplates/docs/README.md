@@ -6,10 +6,10 @@ Author: **Thiago Chagas**
 To create a new project execute:
 
 ```bash
-dotnet-customtemplates
+veste-templates
 ```
 Or:
 
 ```bash
-dotnet customtemplates
+veste templates
 ```

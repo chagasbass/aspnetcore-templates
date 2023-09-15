@@ -7,9 +7,9 @@
 		<OutputType>Exe</OutputType>
 		<Version>0.0.1</Version>
 		<PackAsTool>true</PackAsTool>
-		<ToolCommandName>dotnet-customtemplates</ToolCommandName>
+		<ToolCommandName>veste-templates</ToolCommandName>
 		<Authors>Thiago Chagas</Authors>
-		<Company>Chagas</Company>
+		<Company>Veste SA</Company>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>
 			Tool for generating .NET custom projects

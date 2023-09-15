@@ -7,7 +7,8 @@ public class WebApiDotNet7 : TemplateDefinition
         BaseUrl = "https://raw.githubusercontent.com/chagasbass/aspnetcore-templates/main/templates/1.00.00/dotnet7/webapi/Chagas";
 
         #region API
-        Files.Add("Chagas.csproj");
+
+        Files.Add("Chagas.API/Chagas.sln");
         Files.Add("Chagas.API/Chagas.API.csproj");
         Files.Add("Chagas.API/Program.cs");
         Files.Add("Chagas.API/appsettings.json");
